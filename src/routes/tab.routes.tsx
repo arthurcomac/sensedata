@@ -1,10 +1,12 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Feather } from '@expo/vector-icons';
+import ButtonNew from '../components/ButtonNew'
 
 import Categories from '../screens/Categories';
 import Home from '../screens/Home';
-import Transactions from '../screens/Transaction';
-import DrawerRoutes from './drawer.routes';
+import Transactions from '../screens/Transactions';
+// import DrawerRoutes from './drawer.routes';
+import NewTransaction from '../screens/NewTransaction';
 
 const Tab = createBottomTabNavigator();
 
@@ -24,26 +26,17 @@ const TabRoutes = () => {
         name='transactions'
         component={Transactions}
         options={{
-          tabBarIcon: ({ color, size }) => <Feather name="dollar-sign" color={color} size={size} />,
-          tabBarLabel: 'Transações'
-        }}
-      />
-
-      <Tab.Screen
-        name='categories'
-        component={Categories}
-        options={{
-          tabBarIcon: ({ color, size }) => <Feather name="bookmark" color={color} size={size} />,
-          tabBarLabel: 'Categorias'
+          tabBarIcon: ({ color, size }) => <Feather name="search" color={color} size={size} />,
+          tabBarLabel: 'Busca'
         }}
       />
 
       <Tab.Screen
         name='sidebar'
-        component={DrawerRoutes}
+        component={NewTransaction}
         options={{
-          tabBarIcon: ({ color, size }) => <Feather name="menu" color={color} size={size} />,
-          tabBarLabel: 'Menu',
+          tabBarIcon: ({ color, size }) => <ButtonNew color={color} size={size} />,
+          tabBarLabel: '',
         }}
       />
     </Tab.Navigator>

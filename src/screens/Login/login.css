@@ -1,0 +1,39 @@
+import { StyleSheet } from "react-native";
+
+export const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      padding: 12,
+      alignItems: "center",
+      justifyContent:"center",
+    },
+    input: {
+      alignItems: "center",
+      width: '90%',
+    },
+    textInput: {
+      backgroundColor: '#cfb374',
+      width: '90%',
+      height: 45,
+      marginBottom: 20,
+      fontSize: 20,
+      borderRadius: 8,
+      padding: 8,
+    },
+    allButtons: {
+      alignItems: "center",
+    },
+    buttonSubmit: {
+      backgroundColor: '#cfb374',
+      color: '#42483e',
+      height: 45,
+      fontSize: 25,
+      borderRadius: 8,
+      padding: 8,
+      marginBottom: 10,
+    },
+    buttonCreate: {
+      color: '#42483e',
+    },
+  });
+  

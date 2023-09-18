@@ -5,7 +5,7 @@ import {
   // DrawerItemList
 } from '@react-navigation/drawer';
 import { Feather } from '@expo/vector-icons';
-import About from '../screens/About';
+import About from '../screens/NewTransaction';
 import { FIREBASE_AUTH } from '../../FirebaseConfig';
 
 const Drawer = createDrawerNavigator();
